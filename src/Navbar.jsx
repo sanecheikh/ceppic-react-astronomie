@@ -1,4 +1,4 @@
-import {link} from 'react-dom';
+import {Link} from 'react-dom';
 const Navbar = () => {
     return (
         <nav className='navbar'>
