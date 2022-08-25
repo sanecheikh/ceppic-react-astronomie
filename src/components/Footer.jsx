@@ -4,7 +4,7 @@ export default function Footer (copylelft) {
     }
     return (
 
-        <P> &copy;- {CurrentYear()}- Blog Astronomie</P>)
+        <p> &copy;- {CurrentYear()}- Blog Astronomie</p>)
      
     
 };
