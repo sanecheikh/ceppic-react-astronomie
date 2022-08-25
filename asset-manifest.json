@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sanecheikh/ceppic-react-astronomie.git/static/css/main.08bab63f.css",
+    "main.js": "/sanecheikh/ceppic-react-astronomie.git/static/js/main.5496aae0.js",
+    "index.html": "/sanecheikh/ceppic-react-astronomie.git/index.html",
+    "main.08bab63f.css.map": "/sanecheikh/ceppic-react-astronomie.git/static/css/main.08bab63f.css.map",
+    "main.5496aae0.js.map": "/sanecheikh/ceppic-react-astronomie.git/static/js/main.5496aae0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08bab63f.css",
+    "static/js/main.5496aae0.js"
+  ]
+}
