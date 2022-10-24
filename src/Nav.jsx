@@ -1,21 +1,17 @@
-import {Link} from 'react-dom';
-const Navbar = () => {
-    return (
-        <nav className='navbar'>
-            <div>
-                <Link className='logo' to="/"Blog Astronomie></Link> 
-        
-                </div>
-              <div>
-                <ul className='liens'>
-                <li><Link to ='/'className='lien'>Article</Link></li>
-                 <li> <Link to ='/'className='lien buttonAjouterArticle'> Ajouter Article</Link></li>
-                <li><Link to ='/'className='lien buttonAPropos'>A Propos</Link></li>
-                 </ul>
+import { Link,Outlet } from "react-router-dom";
+import "./Nav.css";
 
-            </div>
-        </nav>
-);
-};
-export default Navbar;
+export default function Nav() {
+  return (
+    <>
+      <nav className="nav">
+        <Link to="/">Home</Link>
+        <Link to="/article">Article</Link>
+        <Link to="/ajouterarticle">AjouterArticle</Link>
+        <Link to="/apropos">APropos</Link>
+      </nav>
+      <Outlet />
+    </>
+  );
+}
 

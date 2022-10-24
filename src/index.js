@@ -1,17 +1,37 @@
 import React from 'react';
-import {link} from 'react';
+
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from "react-router-dom";
-import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes,Route } from "react-router-dom";
+
+
+import Article from "./pages/Article";
+import AjouterArticle from "./pages/AjouterArticle";
+import APropos from "./pages/APropos";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <browserRouter> <App />
+   <BrowserRouter> 
+   <Header/>
+   <Routes>
 
-   </browserRouter> 
+       
+        
+        <Route path="article" element={<Article/>} />
+        <Route path="ajouterarticle" element={<AjouterArticle/>} />
+        <Route path="apropos" element={<APropos/>} />
+
+    
+  
+   </Routes>
+    <Footer/>
+
+   </BrowserRouter>  
    
   </React.StrictMode>
 );
